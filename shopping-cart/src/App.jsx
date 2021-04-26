@@ -13,7 +13,6 @@ class App extends React.Component {
       sort: "",
     };
   }
-
   render() {
     return (
       <div className="grid-container">
@@ -23,9 +22,7 @@ class App extends React.Component {
         <main>
           <div className="content">
             <div className="main">
-              <Products 
-                products={this.state.products}
-              />
+              <Products products={this.state.products}></Products>
             </div>
             <div className="sidebar">
               cart items
@@ -34,7 +31,7 @@ class App extends React.Component {
 
         </main>
         <footer>
-          <span>All right is reserved to <a href="https://www.nubeala.com">Nubeala</a></span>
+          <span className="credit">All right is reserved to <a href="https://www.nubeala.com">Nubeala.com</a></span>
         </footer>
       </div>
     )
